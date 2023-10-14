@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<link rel="stylesheet" th:href="@{/css/about.css}">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous" />
+
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#45978e;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Main Content Container */
+.page-container {
+    position: relative;
+}
+
+/* About Section Styles */
+.about-section {
+  /*  background-color: #f8f9fa;*/
+    padding: 40px 0;
+    margin-bottom: 20px; /* Add margin to create separation */
+}
+
+.inner-id {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.inner-id h1 {
+    font-size: 36px;
+}
+
+.text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Team Cards Styles */
+.id {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+   /* background: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+    max-height: 400px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the fixed height */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contentBx {
+    padding: 15px;
+}
+
+.contentBx h4 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.contentBx h5 {
+    font-size: 18px;
+    color: #777;
+    margin: 0;
+}
+
+.sci {
+    padding: 10px 0;
+}
+
+.sci a {
+    font-size: 20px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.sci a:hover {
+    color: #17a2b8;
+}
+/* About Section Bottom (full-width background) */
+.about-section-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    height: 100px; /* Adjust the height as needed */
+  /*  background-color: #f8f9fa; /* Same color as the about-section */
+}
+.bcg{
+text-align: center;
+margin-top: 60px;}
+</style>
+
+<body>
+	<div class="page-container">
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Agri Mart</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto text-uppercase">
+						<li class="nav-item active"><a class="nav-link"
+							th:href="@{/}">Home </a></li>
+
+						<li class="nav-item"><a class="nav-link" th:href="@{about}">About</a>
+						</li>
+
+						<li class="nav-item"><a class="nav-link" th:href="@{signin}"
+							tabindex="-1" arial-disabled="true">Login</a></li>
+
+						<li class="nav-item"><a class="nav-link" th:href="@{signup}"
+							tabindex="-1" arial-disabled="true">Signup</a></li>
+						<li class="nav-item"><a class="nav-link "
+							th:href="@{contact}" tabindex="-1" arial-disabled="true">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<br />
+		<br>
+		<br>
+		<div class="bcg">
+		<h1 align="center"><strong>OUR TEAM</strong></h1>
+		</div>
+		<div class="id">
+		<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="img/kunalh.png" alt="" />
+					</div>
+					<div class="contentBx">
+						<h4>Kunal Hire</h4>
+						<h5>Developer</h5>
+						<br>
+						<h6>+91-9011725630</h6>
+					</div>
+					<div class="sci">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="img/nil.jpg" alt="" />
+					</div>
+					<div class="contentBx">
+						<h4>Nilesh Patil</h4>
+						<h5>Developer</h5>
+						<br>
+						<h6>+91-9403625694</h6>
+					</div>
+					<div class="sci">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="img/abhim.png" alt="" />
+					</div>
+					<div class="contentBx">
+						<h4>Abhishek Mahajan</h4>
+						<h5>Developer</h5>
+						<br>
+						<h6>+91-8668787882</h6>
+					</div>
+					<div class="sci">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="img/anuw.png" alt="" />
+					</div>
+					<div class="contentBx">
+						<h4>Anushka Wagh</h4>
+						<h5>Developer</h5>
+						<br>
+						<h6>+91-9359048639</h6>
+					</div>
+					<div class="sci">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="about-section">
+			<div class="inner-id">
+				<h1>About Us</h1>
+				<p class="text">Agri-Mart is a web application in which farmers
+					will be able to showcase their agri products on the website, and buyers
+					can do a bid on particular products. The main objective of this
+					project is to obtain the best value and the highest price for the
+					farmers agri products.</p>
+				<div class="skills"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+</html>

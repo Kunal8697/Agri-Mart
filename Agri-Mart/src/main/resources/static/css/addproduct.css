@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+html {
+	background: url('img/add.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+ .form {
+	position: absolute;
+	top: 50%;
+	left: 47%;
+	width: 32em;
+	height: 20em;
+	margin-top: -9em;
+	margin-left: -15em;
+	border: 13px solid rgb(66, 245, 78);
+	background-color: rgb(98, 176, 176);
+	border-radius: 20px;
+	text-color:white;
+} 
+
+#in {
+	margin-left: 45px;
+	border-color: rgb(0, 255, 98);
+	border-radius: 10px;
+	width: 250px;
+	height: 35px;
+	margin-top: 5px;
+}
